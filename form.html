@@ -1,0 +1,115 @@
+<DOCTYPE html> 
+<html> 
+    <head> 
+        <title> My Form</title>
+    </head>
+
+
+    <body>
+        <!--TO GET FORMS (post vs get; ) -->
+
+        <form method="get">
+
+            <!--1. To get input text (text = for..); to make an item required place "required" tag-->
+
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" placeholder="Enter first name" required> 
+
+            <!---"for= and "name=" has to have same value ex. "firstname"-->
+
+            <br>
+
+
+            <label for="lastname"> Last Name:</label>
+            <input type="text" name="lastname">
+
+            <br> 
+
+            <!--2. To get yes, no, maybe input (one choice = radio)-->
+
+            <label for="condition"> Do you agree with the conditions?</label>
+
+            <input type="radio" name="condition" value="yes"> Yes
+            <input type="radio" name="condition" value="no"> No
+            <input type="radio" name="condition" value="maybe"> Maybe
+
+            <br>
+
+            <!--3. To do multiple ans (multiple ans= check box)-->
+
+            <label for="favecolor"> Favorite color(s):</label>
+            <input type="checkbox" name="favecolor" value="red"> Red
+            <input type="checkbox" name="favecolor" value="yellow"> Yellow
+            <input type="checkbox" name="favecolor" value="blue"> Blue
+            <input type="checkbox" name="favecolor" value="green"> Green
+
+            <br> 
+
+            <!--4.For input of long text (paragragh = text area)-->
+            <label for="address">Address:</label>
+            <textarea name="address" maxlength="50" rows="6" cols="30"></textarea>
+
+            <br> 
+
+            <!--5. To get email input (email)-->
+
+            <label for="email">Email:</label>
+            <input type="email" name="email">
+
+            <br> 
+
+            <!--6. To get password, with max characters (for...)-->
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" maxlength="10">
+
+            <br> 
+
+            <!--7. Select drop down choices (for + select + option) -->
+
+            <label for="favedessert">Dessert:</label>
+
+            <select name="dessert">
+                <option selected disabled>Select option</option>
+                <option value="icecream">Ice cream</option>
+                <option value="pudding">Pudding</option>
+                <option value="chocolate">chocolate</option>
+                <option value="cake">Cake</option>
+                <option value="halohalo">Halo-Halo</option>
+                <option value="Kakanin">Kakanin</option>
+                <option value="lecheflan"> Leche flan</option>
+
+            </select>
+
+            <br> 
+
+            <!--8. To get a date, ex. birthday with mix and max date allowed (for + type + min & max[optional] ) -->
+
+            <label for="birthday">Birthday:</label>
+            <input type="date" name="date" min="2024-08-01" max="2024-08-31">
+
+            <br>
+
+            <!--9.To get age/ number with with optional min and max-->
+
+            <label for="age">Age:</label>
+            <input type="number" name="age" min="18" max="100">
+
+            <br> 
+
+
+
+            <!--10. To submit form (type="submit")-->
+
+            <input type="submit" value="Submit my information">
+
+
+        
+
+        </form> 
+    
+    </body>
+
+</html>
+
+</DOCTYPE>
